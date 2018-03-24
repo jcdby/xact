@@ -2,7 +2,7 @@ import xact from './xact/dist/xact.js';
 import xactDOM from './xact/dist/xactDOM.js';
 
 
-const element = (
+const element = () => (
   <div>
     Hello world
     <img src="/public/images/hello.jpeg" alt="hello" cv-data="hello"/> 
@@ -49,6 +49,6 @@ const root = document.querySelector("#root");
 // setInterval(tick, 1000);
 
 xactDOM.render(
-  element2,
+  <element2 />,
   root
 )
